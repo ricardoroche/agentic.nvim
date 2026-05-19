@@ -12,6 +12,8 @@
 --- | "goose-acp"
 --- | "kiro-acp"
 --- | "pi-acp"
+--- | "hermes-agent-acp"
+--- | "oh-my-pi-acp"
 
 --- @alias agentic.UserConfig.HeaderRenderFn fun(parts: agentic.ui.ChatWidget.HeaderParts): string|nil
 
@@ -387,6 +389,20 @@ local ConfigDefault = {
         ["pi-acp"] = {
             name = "Pi ACP",
             command = "pi-acp",
+            env = {},
+        },
+
+        ["hermes-agent-acp"] = {
+            name = "Hermes Agent ACP",
+            command = "hermes",
+            args = { "acp" },
+            env = {},
+        },
+
+        ["oh-my-pi-acp"] = {
+            name = "Oh My Pi ACP",
+            command = "omp",
+            args = { "acp" },
             env = {},
         },
     },

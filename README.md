@@ -5,7 +5,7 @@
 > ⚡ A Chat interface for AI agents in Neovim that works with any provider
 > supporting the [Agent Client Protocol (ACP)](https://agentclientprotocol.com)
 > — including Claude, Gemini, Codex, OpenCode, Cursor Agent, Copilot, Auggie,
-> Mistral Vibe, Cline, Goose, Kiro, Pi, and more.
+> Mistral Vibe, Cline, Goose, Kiro, Pi, Hermes Agent, Oh My Pi, and more.
 
 **Agentic.nvim** brings your AI assistant to Neovim through the implementation
 of the [Agent Client Protocol (ACP)](https://agentclientprotocol.com).
@@ -122,7 +122,7 @@ _...and any future ACP-compatible provider._
   times
 - **🔌 Any ACP Provider** - Works with any AI provider that implements the Agent
   Client Protocol — Claude, Gemini, Codex, OpenCode, Cursor Agent, Copilot,
-  Auggie, Mistral Vibe, Cline, Goose, Kiro, Pi, and any future ACP-compatible
+  Auggie, Mistral Vibe, Cline, Goose, Kiro, Pi, Hermes Agent, Oh My Pi, and any future ACP-compatible
   provider
 - **🔑 Zero Config Authentication** - No API keys needed
   - **Keep you secrets secret**: run `claude /login`, or `gemini auth login`

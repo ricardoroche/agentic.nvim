@@ -5,7 +5,7 @@
 A Chat interface for AI agents in Neovim that works with any provider
 supporting the Agent Client Protocol (ACP) -- including Claude, Gemini,
 Codex, OpenCode, Cursor Agent, Copilot, Auggie, Mistral Vibe, Cline,
-Goose, Kiro, Pi, and more.
+Goose, Kiro, Pi, Hermes Agent, Oh My Pi, and more.
 
 Type |gO| to see the table of contents.
 
@@ -58,6 +58,8 @@ Supported providers:
   - Goose (goose-acp)
   - Kiro (kiro-acp)
   - Pi (pi-acp)
+  - Hermes Agent (hermes-agent-acp)
+  - Oh My Pi (oh-my-pi-acp)
   - ...and any future ACP-compatible provider
 
 ==============================================================================
@@ -152,6 +154,17 @@ Provider install commands (always check official docs):
     `pnpm add -g pi-acp`
     OR `npm i -g pi-acp`
 
+  hermes-agent                                  *agentic-install-hermes*
+    https://hermes-agent.nousresearch.com/docs/
+    `curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash`
+    Then ensure the ACP extra is installed:
+    `pip install -e '.[acp]'`
+
+  oh-my-pi                                        *agentic-install-omp*
+    https://github.com/can1357/oh-my-pi
+    `curl -fsSL https://raw.githubusercontent.com/can1357/oh-my-pi/main/install.sh | bash`
+    OR clone and build from source.
+
 Optional: |img-clip.nvim| for pasting screenshots from the clipboard.
 Drag-and-drop works without it if your terminal supports it.
 
@@ -172,6 +185,7 @@ Using lazy.nvim: ~
       -- "opencode-acp" | "cursor-acp" | "copilot-acp"
       -- "auggie-acp" | "mistral-vibe-acp" | "cline-acp"
       -- "goose-acp" | "kiro-acp" | "pi-acp"
+      -- "hermes-agent-acp" | "oh-my-pi-acp"
       provider = "claude-agent-acp",
     },
 
